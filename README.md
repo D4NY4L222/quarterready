@@ -1,10 +1,10 @@
 # QuarterReady
 
-QuarterReady is a free, browser-based set of UK Making Tax Digital planning tools for sole traders. It includes a start-date checker, a spreadsheet route planner, a marketplace payout worksheet, and evidence-linked guides.
+QuarterReady is an independent affiliate publisher and free, browser-based set of UK marketplace-seller guides. It includes Making Tax Digital planning tools, a payout worksheet, and source-checked product fit guides.
 
 ## Production site
 
-[quarterready.pages.dev](https://quarterready.pages.dev/) is deployed from the `main` branch through Cloudflare Pages. There are currently no active affiliate links, analytics, accounts, server-side form submissions, or non-essential cookies.
+[quarterready.pages.dev](https://quarterready.pages.dev/) is deployed from the `main` branch through Cloudflare Pages. Affiliate applications are being prepared for eRank, Link My Books and Taxfix. Product links remain direct and untracked until a programme accepts the owner. There are currently no analytics, accounts, server-side form submissions or non-essential cookies.
 
 ## Run locally
 

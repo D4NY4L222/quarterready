@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920" role="img" aria-labelledby="title desc">
+  <title id="title">Taxfix human filing social post</title>
+  <desc id="desc">QuarterReady social creative distinguishing software organisation from accountant-prepared tax filing.</desc>
+  <rect width="1080" height="1920" fill="#f7eee0"/>
+  <path d="M720 0h360v760L850 620 720 720z" fill="#e5cfad"/>
+  <path d="M0 1500l350-160 250 580H0z" fill="#d9eadc"/>
+  <g transform="translate(82 86)">
+    <rect width="72" height="72" rx="18" fill="#173f2b"/>
+    <text x="36" y="51" text-anchor="middle" font-family="Georgia,serif" font-size="46" fill="#ffffff">Q</text>
+    <text x="94" y="32" font-family="Arial,sans-serif" font-weight="800" font-size="27" fill="#17231b">QUARTERREADY</text>
+    <text x="94" y="61" font-family="Arial,sans-serif" font-size="20" fill="#526158">TOOLS FOR MARKETPLACE SELLERS</text>
+  </g>
+  <g transform="translate(82 365)">
+    <rect width="340" height="52" rx="26" fill="#173f2b"/>
+    <text x="170" y="35" text-anchor="middle" font-family="Arial,sans-serif" font-weight="800" font-size="22" letter-spacing="1" fill="#d5ff9c">TAX RETURN HELP</text>
+    <text x="0" y="225" font-family="Georgia,serif" font-size="116" fill="#17231b">
+      <tspan x="0" dy="0">Software</tspan>
+      <tspan x="0" dy="126">organises</tspan>
+      <tspan x="0" dy="126" font-style="italic">the records.</tspan>
+    </text>
+    <line x1="0" y1="665" x2="916" y2="665" stroke="#173f2b" stroke-width="5"/>
+    <text x="0" y="800" font-family="Georgia,serif" font-size="116" fill="#17231b">
+      <tspan x="0" dy="0">An accountant</tspan>
+      <tspan x="0" dy="126">prepares</tspan>
+      <tspan x="0" dy="126" font-style="italic">the return.</tspan>
+    </text>
+    <text x="0" y="1195" font-family="Arial,sans-serif" font-size="34" font-weight="700" fill="#3f4d43">
+      <tspan x="0" dy="0">Compare scope—not just the headline price.</tspan>
+    </text>
+  </g>
+  <g transform="translate(82 1590)">
+    <text font-family="Arial,sans-serif" font-size="22" font-weight="800" letter-spacing="1" fill="#526158">PRODUCT GUIDE • AFFILIATE STATUS: NOT YET APPROVED</text>
+    <rect y="72" width="916" height="120" rx="24" fill="#173f2b"/>
+    <text x="458" y="146" text-anchor="middle" font-family="Arial,sans-serif" font-size="29" font-weight="800" fill="#ffffff">quarterready.pages.dev/tools/taxfix-for-sole-traders</text>
+  </g>
+</svg>

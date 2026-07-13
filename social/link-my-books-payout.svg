@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920" role="img" aria-labelledby="title desc">
+  <title id="title">Link My Books payout social post</title>
+  <desc id="desc">QuarterReady social creative explaining why marketplace sales and payouts differ.</desc>
+  <rect width="1080" height="1920" fill="#0c2016"/>
+  <circle cx="975" cy="155" r="270" fill="#173f2b"/>
+  <circle cx="100" cy="1780" r="330" fill="#173f2b"/>
+  <g transform="translate(82 86)">
+    <rect width="72" height="72" rx="18" fill="#d5ff9c"/>
+    <text x="36" y="51" text-anchor="middle" font-family="Georgia,serif" font-size="46" fill="#173f2b">Q</text>
+    <text x="94" y="32" font-family="Arial,sans-serif" font-weight="800" font-size="27" fill="#ffffff">QUARTERREADY</text>
+    <text x="94" y="61" font-family="Arial,sans-serif" font-size="20" fill="#aebdb2">TOOLS FOR MARKETPLACE SELLERS</text>
+  </g>
+  <g transform="translate(82 345)">
+    <rect width="330" height="52" rx="26" fill="#d5ff9c"/>
+    <text x="165" y="35" text-anchor="middle" font-family="Arial,sans-serif" font-weight="800" font-size="22" letter-spacing="1" fill="#173f2b">PAYOUT CHECK</text>
+    <text x="0" y="220" font-family="Georgia,serif" font-size="150" fill="#ffffff">£4,000</text>
+    <text x="0" y="290" font-family="Arial,sans-serif" font-size="32" font-weight="800" letter-spacing="2" fill="#9fb1a4">MARKETPLACE SALES</text>
+    <text x="0" y="475" font-family="Georgia,serif" font-size="150" fill="#d5ff9c">£3,420</text>
+    <text x="0" y="545" font-family="Arial,sans-serif" font-size="32" font-weight="800" letter-spacing="2" fill="#9fb1a4">BANK PAYOUT</text>
+    <line x1="0" y1="660" x2="916" y2="660" stroke="#58705f" stroke-width="4"/>
+    <text x="0" y="790" font-family="Georgia,serif" font-size="105" fill="#ffffff">
+      <tspan x="0" dy="0">Both figures</tspan>
+      <tspan x="0" dy="116" font-style="italic">can be right.</tspan>
+    </text>
+    <text x="0" y="1080" font-family="Arial,sans-serif" font-size="34" font-weight="700" fill="#cbd9cf">
+      <tspan x="0" dy="0">Already use Xero or QuickBooks?</tspan>
+      <tspan x="0" dy="50">Test one settlement before paying for a connector.</tspan>
+    </text>
+  </g>
+  <g transform="translate(82 1590)">
+    <text font-family="Arial,sans-serif" font-size="22" font-weight="800" letter-spacing="1" fill="#9fb1a4">PRODUCT GUIDE • AFFILIATE STATUS: NOT YET APPROVED</text>
+    <rect y="72" width="916" height="120" rx="24" fill="#d5ff9c"/>
+    <text x="458" y="132" text-anchor="middle" font-family="Arial,sans-serif" font-size="25" font-weight="800" fill="#173f2b">quarterready.pages.dev/tools/</text>
+    <text x="458" y="164" text-anchor="middle" font-family="Arial,sans-serif" font-size="25" font-weight="800" fill="#173f2b">link-my-books-for-marketplace-sellers</text>
+  </g>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920" role="img" aria-labelledby="title desc">
+  <title id="title">eRank Etsy search social post</title>
+  <desc id="desc">QuarterReady social creative about testing Etsy search phrases with eRank's free plan.</desc>
+  <rect width="1080" height="1920" fill="#eff8df"/>
+  <circle cx="945" cy="210" r="250" fill="#d5ff9c"/>
+  <circle cx="120" cy="1640" r="340" fill="#dcefd0"/>
+  <g transform="translate(82 86)">
+    <rect width="72" height="72" rx="18" fill="#173f2b"/>
+    <text x="36" y="51" text-anchor="middle" font-family="Georgia,serif" font-size="46" fill="#ffffff">Q</text>
+    <text x="94" y="32" font-family="Arial,sans-serif" font-weight="800" font-size="27" fill="#17231b">QUARTERREADY</text>
+    <text x="94" y="61" font-family="Arial,sans-serif" font-size="20" fill="#526158">TOOLS FOR MARKETPLACE SELLERS</text>
+  </g>
+  <g transform="translate(82 365)">
+    <rect width="250" height="52" rx="26" fill="#173f2b"/>
+    <text x="125" y="35" text-anchor="middle" font-family="Arial,sans-serif" font-weight="800" font-size="22" letter-spacing="1" fill="#d5ff9c">ETSY SEARCH</text>
+    <text x="0" y="190" font-family="Georgia,serif" font-size="110" fill="#17231b">
+      <tspan x="0" dy="0">Your Etsy title</tspan>
+      <tspan x="0" dy="124">can be full</tspan>
+      <tspan x="0" dy="124">and still target</tspan>
+      <tspan x="0" dy="124" font-style="italic">the wrong search.</tspan>
+    </text>
+    <line x1="0" y1="720" x2="916" y2="720" stroke="#173f2b" stroke-width="5"/>
+    <text x="0" y="800" font-family="Arial,sans-serif" font-weight="700" font-size="36" fill="#17231b">
+      <tspan x="0" dy="0">Use eRank's free plan on three real listings.</tspan>
+      <tspan x="0" dy="52">Upgrade only if the limits block useful work.</tspan>
+    </text>
+  </g>
+  <g transform="translate(82 1590)">
+    <text font-family="Arial,sans-serif" font-size="22" font-weight="800" letter-spacing="1" fill="#526158">PRODUCT GUIDE • AFFILIATE STATUS: NOT YET APPROVED</text>
+    <rect y="72" width="916" height="120" rx="24" fill="#173f2b"/>
+    <text x="458" y="146" text-anchor="middle" font-family="Arial,sans-serif" font-size="29" font-weight="800" fill="#ffffff">quarterready.pages.dev/tools/erank-for-etsy-sellers</text>
+  </g>
+</svg>

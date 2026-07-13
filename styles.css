@@ -474,6 +474,25 @@ legend { width: 100%; margin: 0 0 7px; font-size: 1rem; font-weight: 900; line-h
 .guide-card.featured p { color: #cbd9cf; }
 .guide-card b { margin-top: auto; font-size: 0.75rem; }
 
+.product-section { padding-block: 105px; }
+.product-section + .product-method { padding-top: 0; }
+.product-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.product-card { min-height: 340px; display: flex; flex-direction: column; padding: 28px; color: var(--ink); background: var(--cream); border: 1px solid #ddd7ca; border-radius: var(--radius-md); }
+.product-card-growth { background: #eff8df; border-color: #c9dfa8; }
+.product-card-books { color: var(--white); background: var(--forest); border-color: var(--forest); }
+.product-card-tax { background: #f7eee0; border-color: #e5cfad; }
+.product-card h3 { margin: 55px 0 14px; font-family: Georgia, serif; font-size: 1.65rem; font-weight: 500; letter-spacing: -0.035em; line-height: 1.08; }
+.product-card p { margin: 0 0 24px; color: var(--ink-soft); font-size: 0.8rem; }
+.product-card-books p { color: #cbd9cf; }
+.product-card > a { margin-top: auto; color: inherit; font-size: 0.75rem; font-weight: 900; text-decoration: none; }
+.product-card > a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.status-pill { align-self: flex-start; display: inline-flex; padding: 6px 10px; color: var(--forest-dark); background: var(--lime); border-radius: 999px; font-size: 0.61rem; font-weight: 900; letter-spacing: 0.05em; text-transform: uppercase; }
+.product-method .article-toc span { color: var(--ink-soft); font-size: 0.7rem; }
+.commercial-note { display: grid; justify-items: start; gap: 13px; padding: 24px; margin: 35px 0; background: var(--mint); border: 1px solid #b9dabf; border-radius: 14px; }
+.commercial-note p { max-width: 630px; margin: 0; font-size: 0.82rem; }
+.commercial-note .button { color: var(--white); text-decoration: none; }
+.commercial-note .button:hover { color: var(--white); }
+
 .evidence-section { padding-block: 100px; color: var(--white); background: var(--forest-dark); }
 .evidence-grid { display: grid; grid-template-columns: 0.85fr 1.15fr; align-items: center; gap: 100px; }
 .eyebrow.light { color: var(--lime); }
@@ -559,6 +578,8 @@ legend { width: 100%; margin: 0 0 7px; font-size: 1rem; font-weight: 900; line-h
   .tool-layout.reverse .route-form { order: 0; }
   .result-card { position: static; }
   .guide-grid { grid-template-columns: 1fr 1fr; }
+  .product-grid { grid-template-columns: 1fr; }
+  .product-card { min-height: 280px; }
   .evidence-grid { grid-template-columns: 1fr; gap: 55px; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .footer-grid > div:first-child { grid-column: span 2; }
@@ -591,6 +612,9 @@ legend { width: 100%; margin: 0 0 7px; font-size: 1rem; font-weight: 900; line-h
   .result-math { grid-template-columns: 1fr; }
   .guide-grid { grid-template-columns: 1fr; }
   .guide-card, .guide-card:last-child { grid-column: auto; min-height: 310px; }
+  .product-section { padding-block: 75px; }
+  .product-card { min-height: 260px; padding: 22px; }
+  .product-card h3 { margin-top: 42px; }
   .evidence-section { padding-block: 75px; }
   .evidence-list a { grid-template-columns: 52px minmax(0, 1fr) 18px; }
   .commercial-section { padding-block: 70px; }
