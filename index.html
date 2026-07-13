@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A browser-only, plain-English Making Tax Digital income-threshold checker and spreadsheet route planner for UK sole-trader marketplace sellers.">
+  <meta name="theme-color" content="#17231b">
+  <title>QuarterReady — MTD tools for UK marketplace sellers</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to the checker</a>
+
+  <div class="disclosure-bar">
+    <div class="shell disclosure-inner">
+      <span><strong>Independent:</strong> QuarterReady is not HMRC and does not give tax advice.</span>
+      <a href="#commercial-disclosure">How this site is funded</a>
+    </div>
+  </div>
+
+  <header class="site-header shell">
+    <a class="brand" href="index.html" aria-label="QuarterReady home">
+      <span class="brand-mark" aria-hidden="true">Q</span>
+      <span>
+        <strong>QuarterReady</strong>
+        <small>MTD, minus the fog</small>
+      </span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#checker">Start-date check</a>
+      <a href="#route">Spreadsheet route</a>
+      <a href="#evidence">Evidence</a>
+      <a class="nav-cta" href="#checker">Check my date</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero shell">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> For UK Amazon, Etsy, eBay &amp; TikTok Shop sole traders</p>
+        <h1>Don’t let a marketplace <em>payout</em> decide your MTD start date.</h1>
+        <p class="hero-lede">HMRC tests the qualifying-income figures on your return—usually gross self-employment and property income before expenses and tax allowances. Combine the right figures, check the threshold, then choose a record-keeping route without a sales call.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#checker">Run the browser-only check <span aria-hidden="true">→</span></a>
+          <a class="text-link" href="guides/mtd-30k-threshold.html">Understand the £30k rule</a>
+        </div>
+        <ul class="trust-list" aria-label="Privacy and methodology">
+          <li><span aria-hidden="true">✓</span> No sign-up</li>
+          <li><span aria-hidden="true">✓</span> Figures stay in your browser</li>
+          <li><span aria-hidden="true">✓</span> HMRC sources linked</li>
+        </ul>
+      </div>
+
+      <aside class="hero-card" aria-label="Making Tax Digital timeline">
+        <div class="card-kicker">The rollout in one glance</div>
+        <div class="timeline-row is-live">
+          <div>
+            <span class="timeline-date">6 Apr 2026</span>
+            <small>Based on 2024/25 return</small>
+          </div>
+          <strong>&gt; £50k</strong>
+        </div>
+        <div class="timeline-row is-next">
+          <div>
+            <span class="timeline-date">6 Apr 2027</span>
+            <small>Based on 2025/26 return</small>
+          </div>
+          <strong>&gt; £30k</strong>
+        </div>
+        <div class="timeline-row">
+          <div>
+            <span class="timeline-date">6 Apr 2028</span>
+            <small>Based on 2026/27 return</small>
+          </div>
+          <strong>&gt; £20k</strong>
+        </div>
+        <p class="hero-card-note"><strong>More than</strong> means the threshold itself is not enough. HMRC uses the return for the earlier tax year shown.</p>
+        <a href="https://www.gov.uk/guidance/find-out-if-and-when-you-need-to-use-making-tax-digital-for-income-tax" rel="noopener" target="_blank">Check the HMRC rule <span aria-hidden="true">↗</span></a>
+      </aside>
+    </section>
+
+    <section class="signal-strip" aria-label="Why this matters now">
+      <div class="shell signal-grid">
+        <div><strong>970,000</strong><span>more people expected to enter MTD in April 2027</span></div>
+        <div><strong>4 cumulative updates</strong><span>per business; the fourth is normally due 7 May after year-end</span></div>
+        <div><strong>1 total</strong><span>qualifying self-employment + your property-income share</span></div>
+      </div>
+    </section>
+
+    <section class="tool-section shell" id="checker">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow"><span></span> Tool 01</p>
+          <h2>Check the published MTD income thresholds</h2>
+        </div>
+        <p>Use whole-pound figures from your Self Assessment return—not profit and not simply the net amount a marketplace deposited. This threshold-only check stops on cases it cannot calculate; HMRC makes the real determination.</p>
+      </div>
+
+      <div class="tool-layout">
+        <form class="tool-card checker-form" id="mtd-checker" autocomplete="off" novalidate>
+          <div class="form-step">
+            <div class="step-number">1</div>
+            <fieldset>
+              <legend>Which personal income sources appear on the relevant returns?</legend>
+              <p class="field-help">Choose all qualifying sources shown, including a ceased source when another source continues. Do not include a limited company’s turnover.</p>
+              <div class="choice-grid choice-grid-two">
+                <label class="choice-card">
+                  <input type="radio" name="incomeType" value="sole" checked>
+                  <span><strong>Sole trade</strong><small>Including freelance or marketplace trading</small></span>
+                </label>
+                <label class="choice-card">
+                  <input type="radio" name="incomeType" value="property">
+                  <span><strong>Property</strong><small>Your individual share of property income</small></span>
+                </label>
+                <label class="choice-card">
+                  <input type="radio" name="incomeType" value="both">
+                  <span><strong>Both</strong><small>Sole trade plus property income</small></span>
+                </label>
+                <label class="choice-card">
+                  <input type="radio" name="incomeType" value="neither">
+                  <span><strong>Neither</strong><small>Company turnover or partnership profit share only</small></span>
+                </label>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="form-step" id="return-question">
+            <div class="step-number">2</div>
+            <fieldset>
+              <legend>Have you already submitted a Self Assessment return?</legend>
+              <p class="field-help">HMRC says you do not need to start MTD for Income Tax until after your first return.</p>
+              <div class="inline-choices">
+                <label><input type="radio" name="submittedReturn" value="yes"> Yes</label>
+                <label><input type="radio" name="submittedReturn" value="no"> No</label>
+                <label><input type="radio" name="submittedReturn" value="unsure" checked> Not sure</label>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="form-step" id="scope-questions">
+            <div class="step-number">3</div>
+            <fieldset>
+              <legend>Check the limits of this small calculator</legend>
+              <p class="field-help">If a special case applies, the tool will stop and send you to HMRC instead of guessing.</p>
+
+              <div class="safeguard-question">
+                <strong>Ignoring income being below a threshold, have you checked HMRC's other exemption rules and confirmed none applies?</strong>
+                <p class="field-help">These include automatic and temporary exemptions as well as digital exclusion. <a href="https://www.gov.uk/guidance/find-out-if-you-can-get-an-exemption-from-making-tax-digital-for-income-tax" target="_blank" rel="noopener">Check HMRC's exemption guidance ↗</a></p>
+                <div class="inline-choices">
+                  <label><input type="radio" name="exemptionCheck" value="confirmed"> Yes, none applies</label>
+                  <label><input type="radio" name="exemptionCheck" value="notChecked" checked> Not checked / unsure</label>
+                </div>
+              </div>
+
+              <div class="safeguard-question">
+                <strong>Are all figures based on 12-month accounting periods?</strong>
+                <p class="field-help">HMRC annualises shorter or longer periods; this tool does not.</p>
+                <div class="inline-choices">
+                  <label><input type="radio" name="twelveMonthPeriods" value="yes"> Yes</label>
+                  <label><input type="radio" name="twelveMonthPeriods" value="no"> No</label>
+                  <label><input type="radio" name="twelveMonthPeriods" value="unsure" checked> Not sure</label>
+                </div>
+              </div>
+
+              <div class="safeguard-question">
+                <strong>Have all sole-trade and property sources shown on those returns now ceased?</strong>
+                <p class="field-help">A ceased source can still count if another source continues; if every source ceased, the result changes.</p>
+                <div class="inline-choices">
+                  <label><input type="radio" name="allSourcesCeased" value="no"> No</label>
+                  <label><input type="radio" name="allSourcesCeased" value="yes"> Yes</label>
+                  <label><input type="radio" name="allSourcesCeased" value="unsure" checked> Not sure</label>
+                </div>
+              </div>
+
+              <div class="safeguard-question property-safeguard is-hidden">
+                <strong>Do your figures involve foreign property, an SA109 residence page, or uncertainty about your share of jointly owned property?</strong>
+                <p class="field-help">Residence and joint-ownership rules can change the amount HMRC assesses, so this calculator stops on those cases.</p>
+                <div class="inline-choices">
+                  <label><input type="radio" name="propertySpecialCase" value="no"> No</label>
+                  <label><input type="radio" name="propertySpecialCase" value="yes"> Yes</label>
+                  <label><input type="radio" name="propertySpecialCase" value="unsure" checked> Not sure</label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="form-step income-step" id="income-fields">
+            <div class="step-number">4</div>
+            <fieldset>
+              <legend>Enter the qualifying-income figures you know</legend>
+              <p class="field-help">Enter whole pounds as reported or expected on the return. Use £0 only when a selected source genuinely had no qualifying income. Unknown historical figures stop the check; the future estimate may be left entirely blank.</p>
+
+              <div class="year-block" data-year="2425">
+                <div class="year-heading">
+                  <strong>2024/25 tax return</strong>
+                  <span>Tests April 2026</span>
+                </div>
+                <div class="money-grid">
+                  <label class="money-field sole-field">
+                    <span>Sole-trade turnover</span>
+                    <span class="money-input"><b>£</b><input id="sole-2425" name="sole2425" type="number" min="0" step="1" inputmode="numeric" placeholder="Whole pounds"></span>
+                  </label>
+                  <label class="money-field property-field is-hidden">
+                    <span>Your property-income share</span>
+                    <span class="money-input"><b>£</b><input id="property-2425" name="property2425" type="number" min="0" step="1" inputmode="numeric" placeholder="Whole pounds"></span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="year-block is-emphasis" data-year="2526">
+                <div class="year-heading">
+                  <strong>2025/26 tax return</strong>
+                  <span>Tests April 2027</span>
+                </div>
+                <div class="money-grid">
+                  <label class="money-field sole-field">
+                    <span>Sole-trade turnover</span>
+                    <span class="money-input"><b>£</b><input id="sole-2526" name="sole2526" type="number" min="0" step="1" inputmode="numeric" placeholder="Whole pounds"></span>
+                  </label>
+                  <label class="money-field property-field is-hidden">
+                    <span>Your property-income share</span>
+                    <span class="money-input"><b>£</b><input id="property-2526" name="property2526" type="number" min="0" step="1" inputmode="numeric" placeholder="Whole pounds"></span>
+                  </label>
+                </div>
+              </div>
+
+              <details class="future-year">
+                <summary>Add a 2026/27 estimate <span>Tests April 2028</span></summary>
+                <div class="year-block" data-year="2627">
+                  <p class="field-help">Planning estimate only. HMRC will use the qualifying income on the relevant return.</p>
+                  <div class="money-grid">
+                    <label class="money-field sole-field">
+                      <span>Estimated sole-trade turnover</span>
+                      <span class="money-input"><b>£</b><input id="sole-2627" name="sole2627" type="number" min="0" step="1" inputmode="numeric" placeholder="Optional whole pounds"></span>
+                    </label>
+                    <label class="money-field property-field is-hidden">
+                      <span>Estimated property-income share</span>
+                      <span class="money-input"><b>£</b><input id="property-2627" name="property2627" type="number" min="0" step="1" inputmode="numeric" placeholder="Optional whole pounds"></span>
+                    </label>
+                  </div>
+                </div>
+              </details>
+            </fieldset>
+          </div>
+
+          <p class="form-error" id="checker-error" role="alert"></p>
+          <button class="button button-primary button-full" id="checker-submit" type="button">Check the income thresholds <span aria-hidden="true">→</span></button>
+          <noscript><p class="form-error">JavaScript is required to run this check. The button is disabled without it, and no figures are submitted.</p></noscript>
+          <p class="microcopy">QuarterReady does not send or store these entries. Avoid entering customer data, tax references, or account numbers.</p>
+        </form>
+
+        <aside class="result-card empty-state" id="checker-result" aria-live="polite" aria-atomic="true">
+          <div class="result-placeholder" aria-hidden="true">
+            <span>?</span>
+            <div></div><div></div><div></div>
+          </div>
+          <h3>Your threshold result will appear here</h3>
+          <p>We will stop on cases this small tool cannot safely calculate and always show the next official step.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="tool-section route-section" id="route">
+      <div class="shell">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span></span> Tool 02</p>
+            <h2>Your spreadsheet may not need replacing</h2>
+          </div>
+          <p>HMRC says compatible software can connect to existing spreadsheet records. The right route depends on what you use now and how much change you actually want.</p>
+        </div>
+
+        <div class="tool-layout reverse">
+          <form class="tool-card route-form" id="route-planner" autocomplete="off">
+            <fieldset>
+              <legend>How do you keep records today?</legend>
+              <div class="choice-grid choice-grid-two compact">
+                <label class="choice-card">
+                  <input type="radio" name="records" value="spreadsheet" checked>
+                  <span><strong>Spreadsheet</strong><small>Excel, Sheets, or CSV exports</small></span>
+                </label>
+                <label class="choice-card">
+                  <input type="radio" name="records" value="software">
+                  <span><strong>Bookkeeping app</strong><small>Existing accounting software</small></span>
+                </label>
+                <label class="choice-card">
+                  <input type="radio" name="records" value="paper">
+                  <span><strong>Paper / notes</strong><small>Receipts and manual totals</small></span>
+                </label>
+                <label class="choice-card">
+                  <input type="radio" name="records" value="accountant">
+                  <span><strong>My accountant does it</strong><small>I send records to an agent</small></span>
+                </label>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>What matters most?</legend>
+              <select id="priority" name="priority" aria-label="What matters most?">
+                <option value="least-change">Change as little as possible</option>
+                <option value="automation">Reduce manual marketplace reconciliation</option>
+                <option value="one-place">Keep banking and records in one place</option>
+                <option value="support">Have a human or agent check the process</option>
+              </select>
+            </fieldset>
+
+            <fieldset>
+              <legend>How complicated is the setup?</legend>
+              <select id="complexity" name="complexity" aria-label="How complicated is the setup?">
+                <option value="simple">One sole trade, straightforward UK sales</option>
+                <option value="multi">Several marketplaces or payment processors</option>
+                <option value="mixed">Sole trade plus property income</option>
+                <option value="complex">Foreign income, several businesses, or I am unsure</option>
+              </select>
+            </fieldset>
+
+            <button class="button button-dark button-full" id="route-submit" type="button">Build my route <span aria-hidden="true">→</span></button>
+            <noscript><p class="form-error">JavaScript is required to build this route. The button is disabled without it, and no choices are submitted.</p></noscript>
+          </form>
+
+          <aside class="result-card route-result empty-state" id="route-result" aria-live="polite" aria-atomic="true">
+            <div class="route-map" aria-hidden="true">
+              <span></span><i></i><span></span><i></i><span></span>
+            </div>
+            <h3>Your least-disruptive route</h3>
+            <p>Answer three questions and we will map a record-keeping route. It will always include the official software-finder step.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="guides-section shell" aria-labelledby="guides-title">
+      <div class="section-heading compact-heading">
+        <div>
+          <p class="eyebrow"><span></span> Plain-English guides</p>
+          <h2 id="guides-title">Read the part that is tripping you up</h2>
+        </div>
+      </div>
+      <div class="guide-grid">
+        <a class="guide-card featured" href="guides/mtd-30k-threshold.html">
+          <span class="guide-number">01</span>
+          <span class="guide-tag">Threshold</span>
+          <h3>The £30,000 MTD rule without the accounting fog</h3>
+          <p>Gross or profit? One marketplace or all of them? Exactly £30,000 or more?</p>
+          <b>Read the guide <span aria-hidden="true">→</span></b>
+        </a>
+        <a class="guide-card" href="guides/mtd-spreadsheets.html">
+          <span class="guide-number">02</span>
+          <span class="guide-tag">Workflow</span>
+          <h3>Can you keep using Excel or Google Sheets?</h3>
+          <p>Where bridging software fits and what must become digital.</p>
+          <b>See the routes <span aria-hidden="true">→</span></b>
+        </a>
+        <a class="guide-card" href="guides/marketplace-payouts.html">
+          <span class="guide-number">03</span>
+          <span class="guide-tag">Marketplaces</span>
+          <h3>Sales, fees, refunds and the payout in your bank</h3>
+          <p>A reconciliation framework that keeps unlike numbers separate.</p>
+          <b>Open the worksheet <span aria-hidden="true">→</span></b>
+        </a>
+      </div>
+    </section>
+
+    <section class="evidence-section" id="evidence">
+      <div class="shell evidence-grid">
+        <div>
+          <p class="eyebrow light"><span></span> Source-led, not vibes-led</p>
+          <h2>Every rule should survive a click back to HMRC.</h2>
+          <p>Tax rules and software status change. We date-stamp the check, show the exact assumptions, and send you to the official service for the final answer.</p>
+          <a class="button button-light" href="methodology.html">Read the methodology</a>
+        </div>
+        <div class="evidence-list">
+          <a href="https://www.gov.uk/guidance/find-out-if-and-when-you-need-to-use-making-tax-digital-for-income-tax" target="_blank" rel="noopener">
+            <span>HMRC</span><strong>Start dates and thresholds</strong><i aria-hidden="true">↗</i>
+          </a>
+          <a href="https://www.gov.uk/guidance/choose-the-right-software-for-making-tax-digital-for-income-tax" target="_blank" rel="noopener">
+            <span>HMRC</span><strong>Software and spreadsheet routes</strong><i aria-hidden="true">↗</i>
+          </a>
+          <a href="https://www.gov.uk/guidance/use-making-tax-digital-for-income-tax/create-digital-records" target="_blank" rel="noopener">
+            <span>HMRC</span><strong>Digital-record requirements</strong><i aria-hidden="true">↗</i>
+          </a>
+          <div class="checked-date"><span aria-hidden="true">●</span> Core rules checked 13 July 2026</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="commercial-section shell" id="commercial-disclosure">
+      <div class="commercial-card">
+        <div class="commercial-icon" aria-hidden="true">£</div>
+        <div>
+          <p class="eyebrow"><span></span> Commercial disclosure</p>
+          <h2>Useful first. Commercial second.</h2>
+          <p><strong>There are no affiliate links active in this prototype.</strong> If that changes, each commercial link or section will be labelled before engagement: “Ad — QuarterReady earns commission on eligible sign-ups or purchases made through this link.” QuarterReady does not charge the reader; the provider's current pricing and terms apply.</p>
+          <p>Commission will never change an HMRC threshold or turn an unsuitable product into a recommendation. The official software finder and non-commercial spreadsheet route remain available.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell footer-grid">
+      <div>
+        <a class="brand footer-brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true">Q</span>
+          <span><strong>QuarterReady</strong><small>MTD, minus the fog</small></span>
+        </a>
+        <p>An independent educational tool for UK sole traders. Not affiliated with or endorsed by HMRC.</p>
+      </div>
+      <div>
+        <strong>Tools &amp; guides</strong>
+        <a href="#checker">Threshold checker</a>
+        <a href="#route">Spreadsheet route</a>
+        <a href="guides/mtd-30k-threshold.html">The £30k rule</a>
+      </div>
+      <div>
+        <strong>Trust</strong>
+        <a href="methodology.html">Methodology &amp; sources</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="mailto:quarterready.contact@gmail.com">Contact</a>
+        <a href="#commercial-disclosure">Commercial disclosure</a>
+      </div>
+    </div>
+    <div class="shell footer-bottom">
+      <span>Prototype · 13 July 2026</span>
+      <span>Always verify your position with HMRC or a qualified tax professional.</span>
+    </div>
+  </footer>
+</body>
+</html>

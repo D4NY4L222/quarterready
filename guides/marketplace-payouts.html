@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A browser-only marketplace payout reconciliation worksheet for UK sole traders preparing for Making Tax Digital.">
+  <meta name="theme-color" content="#17231b">
+  <title>Marketplace sales, fees and payouts — QuarterReady</title>
+  <link rel="stylesheet" href="../styles.css">
+  <script defer src="../app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#article">Skip to the guide</a>
+  <div class="disclosure-bar"><div class="shell disclosure-inner"><span><strong>Independent:</strong> QuarterReady is not HMRC and does not give tax advice.</span><a href="../index.html#commercial-disclosure">How this site is funded</a></div></div>
+  <header class="site-header article-header shell">
+    <a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true">Q</span><span><strong>QuarterReady</strong><small>MTD, minus the fog</small></span></a>
+    <nav aria-label="Main navigation"><a href="../index.html#checker">Start-date check</a><a href="../index.html#route">Spreadsheet route</a><a href="../methodology.html">Evidence</a><a class="nav-cta" href="#worksheet">Use worksheet</a></nav>
+  </header>
+
+  <main id="article">
+    <header class="article-hero shell">
+      <p class="eyebrow"><span></span> Marketplace records</p>
+      <h1>Sales, fees, refunds and the payout in your bank</h1>
+      <p class="standfirst">A marketplace payout is a settlement, not a complete sales record. Use this browser-only worksheet to check the arithmetic before deciding which figures belong in your bookkeeping.</p>
+      <div class="article-meta"><span>Checked 13 July 2026</span><span>Calculator runs in your browser</span><span>QuarterReady does not store entries</span></div>
+    </header>
+
+    <div class="article-layout shell">
+      <aside class="article-toc" aria-label="On this page"><strong>On this page</strong><a href="#why">Why payout differs</a><a href="#worksheet">Browser-only worksheet</a><a href="#mtd">What MTD changes</a><a href="#routine">Monthly routine</a></aside>
+      <article class="article-body">
+        <h2 id="why">Why your payout and sales are different</h2>
+        <p>A marketplace can collect money from customers, issue refunds, deduct selling and payment fees, hold reserves, add reimbursements, and then deposit a net amount. Looking only at that deposit can hide both income and expenses.</p>
+        <div class="example-card">
+          <strong>A simplified settlement</strong>
+          <div class="math-line"><span>Customer sales shown for the period</span><strong>£4,500</strong></div>
+          <div class="math-line"><span>Less customer refunds</span><strong>− £250</strong></div>
+          <div class="math-line"><span>Less marketplace and payment fees</span><strong>− £620</strong></div>
+          <div class="math-line"><span>Plus other net adjustments</span><strong>+ £20</strong></div>
+          <div class="math-line"><span>Expected bank payout</span><strong>£3,650</strong></div>
+        </div>
+        <p>The £3,650 deposit helps reconcile the bank. It does not, by itself, tell you the turnover and expense figures to use in your accounts or Self Assessment.</p>
+
+        <div class="callout warning">
+          <strong>This worksheet checks settlement arithmetic, not tax treatment.</strong>
+          <p>Refunds, VAT, reserves, foreign currency, timing, cash versus traditional accounting and platform-specific adjustments can change the bookkeeping. Use the underlying reports and obtain advice where needed.</p>
+        </div>
+
+        <h2 id="worksheet">Browser-only payout worksheet</h2>
+        <p>Use one settlement period from one platform. Enter summary figures from the platform statement. Do not enter buyer names, order IDs, tax references or bank-account details.</p>
+
+        <form class="worksheet" id="payout-worksheet">
+          <div class="worksheet-row"><label for="worksheet-sales">Customer sales shown</label><input id="worksheet-sales" type="number" min="0" step="0.01" value="4500" inputmode="decimal"></div>
+          <div class="worksheet-row"><label for="worksheet-refunds">Refunds shown</label><input id="worksheet-refunds" type="number" min="0" step="0.01" value="250" inputmode="decimal"></div>
+          <div class="worksheet-row"><label for="worksheet-fees">Marketplace + processing fees</label><input id="worksheet-fees" type="number" min="0" step="0.01" value="620" inputmode="decimal"></div>
+          <div class="worksheet-row"><label for="worksheet-adjustments">Other net adjustments (+ or −)</label><input id="worksheet-adjustments" type="number" step="0.01" value="20" inputmode="decimal"></div>
+          <div class="worksheet-row"><label for="worksheet-actual">Actual bank deposit</label><input id="worksheet-actual" type="number" min="0" step="0.01" value="3650" inputmode="decimal"></div>
+          <div class="worksheet-output">
+            <div class="math-line"><span>Sales less refunds reference</span><strong id="worksheet-sales-output">£0</strong></div>
+            <div class="math-line"><span>Expected payout from entries</span><strong id="worksheet-output">£0</strong></div>
+            <div class="math-line"><span>Difference from actual deposit</span><strong id="worksheet-difference">£0</strong></div>
+          </div>
+          <p class="microcopy">The “sales less refunds” subtotal is a reconciliation reference, not an automatically correct tax-return or MTD figure.</p>
+        </form>
+
+        <h3>If the difference is not zero</h3>
+        <p>Do not force the bank deposit to match by changing sales. Look for reserves, prior-period adjustments, advertising charges, chargebacks, reimbursements, currency conversion, loans or advances, taxes collected or remitted by the platform, and payout timing.</p>
+
+        <h2 id="mtd">What MTD changes—and what it does not</h2>
+        <p>HMRC's current MTD guidance generally bases qualifying income on self-employment turnover and your property-income share before expenses and tax allowances. If MTD applies, you must use compatible software to create and keep digital records, send quarterly updates and submit the tax return.</p>
+        <p>For digital records, HMRC describes sole-trader income as including sales, takings and fees earned or charged to customers. Those income fees are different from marketplace or payment-processing fees you pay, whose tax treatment is separate. HMRC also says retailers can choose to create a digital record of daily gross takings instead of recording every individual retail sale. That does not remove the need to reconcile platform statements and preserve supporting records.</p>
+        <p>Quarterly updates are summaries built from the records. They do not replace the year-end checks, adjustments, other income and tax return.</p>
+
+        <h2 id="routine">A repeatable marketplace routine</h2>
+        <ol>
+          <li>Download and preserve the platform settlement and transaction reports for the period.</li>
+          <li>Record customer sales/takings using a method consistent with your accounting basis and current HMRC rules.</li>
+          <li>Record refunds, fees and other expenses separately with enough evidence to explain them.</li>
+          <li>Reconcile the calculated settlement to the actual bank deposit and investigate differences.</li>
+          <li>Correct the source records rather than overwriting the payout to make it fit.</li>
+          <li>Back up the spreadsheet or system and keep the platform statements supporting it.</li>
+          <li>Before an MTD deadline, review the cumulative period and use compatible software to generate the update.</li>
+        </ol>
+
+        <p>If reconciling several platforms is the main problem, choose “reduce manual marketplace reconciliation” in the <a href="../index.html#route">QuarterReady route planner</a>. It will suggest testing a connector-plus-accounting path without naming a paid product.</p>
+
+        <div class="source-box">
+          <h2>Sources and limits</h2>
+          <p>Core rules checked 13 July 2026. The worksheet is deliberately a reconciliation check, not a profit, VAT or tax calculator.</p>
+          <ul>
+            <li><a href="https://www.gov.uk/guidance/use-making-tax-digital-for-income-tax/before-you-use-this-guide" target="_blank" rel="noopener">HMRC: qualifying income is turnover before expenses</a></li>
+            <li><a href="https://www.gov.uk/guidance/use-making-tax-digital-for-income-tax/create-digital-records" target="_blank" rel="noopener">HMRC: digital records, sales/takings and retail daily gross takings</a></li>
+            <li><a href="https://www.gov.uk/simpler-income-tax-cash-basis/income-and-expenses-under-cash-basis" target="_blank" rel="noopener">HMRC: recording income and expenses under cash basis</a></li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer"><div class="shell footer-grid"><div><a class="brand footer-brand" href="../index.html"><span class="brand-mark" aria-hidden="true">Q</span><span><strong>QuarterReady</strong><small>MTD, minus the fog</small></span></a><p>An independent educational tool for UK sole traders. Not affiliated with or endorsed by HMRC.</p></div><div><strong>Next</strong><a href="../index.html#checker">Threshold checker</a><a href="mtd-spreadsheets.html">Spreadsheet guide</a></div><div><strong>Trust</strong><a href="../methodology.html">Methodology</a><a href="../privacy.html">Privacy</a><a href="mailto:quarterready.contact@gmail.com">Contact</a></div></div><div class="shell footer-bottom"><span>Prototype · 13 July 2026</span><span>Verify your position with HMRC or a qualified tax professional.</span></div></footer>
+</body>
+</html>
