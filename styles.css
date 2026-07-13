@@ -462,7 +462,7 @@ legend { width: 100%; margin: 0 0 7px; font-size: 1rem; font-weight: 900; line-h
 
 .guides-section { padding-block: 112px; }
 .compact-heading { grid-template-columns: 1fr; }
-.guide-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.guide-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
 .guide-card { min-height: 360px; display: flex; flex-direction: column; padding: 26px; overflow: hidden; position: relative; color: var(--ink); background: var(--cream); border: 1px solid #ddd7ca; border-radius: var(--radius-md); text-decoration: none; transition: transform 180ms ease, box-shadow 180ms ease; }
 .guide-card:hover { transform: translateY(-5px); box-shadow: var(--shadow); }
 .guide-card.featured { color: var(--white); background: var(--forest); border-color: var(--forest); }
@@ -556,7 +556,6 @@ legend { width: 100%; margin: 0 0 7px; font-size: 1rem; font-weight: 900; line-h
   .tool-layout.reverse .route-form { order: 0; }
   .result-card { position: static; }
   .guide-grid { grid-template-columns: 1fr 1fr; }
-  .guide-card:last-child { grid-column: span 2; min-height: 280px; }
   .evidence-grid { grid-template-columns: 1fr; gap: 55px; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
   .footer-grid > div:first-child { grid-column: span 2; }

@@ -12,7 +12,12 @@
   <meta property="og:title" content="QuarterReady — MTD tools for UK marketplace sellers">
   <meta property="og:description" content="Browser-only Making Tax Digital threshold and spreadsheet planning tools for UK sole traders.">
   <meta property="og:url" content="https://quarterready.pages.dev/">
-  <meta name="twitter:card" content="summary">
+  <meta property="og:image" content="https://quarterready.pages.dev/og-quarterready.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="QuarterReady — know your Making Tax Digital start date">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://quarterready.pages.dev/og-quarterready.png">
   <title>QuarterReady — MTD tools for UK marketplace sellers</title>
   <link rel="canonical" href="https://quarterready.pages.dev/">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -20,6 +25,11 @@
   <script defer src="app.js"></script>
 </head>
 <body>
+  <div itemscope itemtype="https://schema.org/WebSite">
+    <link itemprop="url" href="https://quarterready.pages.dev/">
+    <meta itemprop="name" content="QuarterReady">
+    <meta itemprop="alternateName" content="Quarter Ready">
+  </div>
   <a class="skip-link" href="#main">Skip to the checker</a>
 
   <div class="disclosure-bar">
@@ -30,7 +40,7 @@
   </div>
 
   <header class="site-header shell">
-    <a class="brand" href="index.html" aria-label="QuarterReady home">
+    <a class="brand" href="/" aria-label="QuarterReady home">
       <span class="brand-mark" aria-hidden="true">Q</span>
       <span>
         <strong>QuarterReady</strong>
@@ -53,7 +63,7 @@
         <p class="hero-lede">HMRC tests the qualifying-income figures on your return—usually gross self-employment and property income before expenses and tax allowances. Combine the right figures, check the threshold, then choose a record-keeping route without a sales call.</p>
         <div class="hero-actions">
           <a class="button button-primary" href="#checker">Run the browser-only check <span aria-hidden="true">→</span></a>
-          <a class="text-link" href="guides/mtd-30k-threshold.html">Understand the £30k rule</a>
+          <a class="text-link" href="/guides/mtd-30k-threshold">Understand the £30k rule</a>
         </div>
         <ul class="trust-list" aria-label="Privacy and methodology">
           <li><span aria-hidden="true">✓</span> No sign-up</li>
@@ -92,7 +102,7 @@
 
     <section class="signal-strip" aria-label="Why this matters now">
       <div class="shell signal-grid">
-        <div><strong>970,000</strong><span>more people expected to enter MTD in April 2027</span></div>
+        <div><strong>1,077,000</strong><span>people in HMRC's published £30k–£50k cohort for April 2027</span></div>
         <div><strong>4 cumulative updates</strong><span>per business; the fourth is normally due 7 May after year-end</span></div>
         <div><strong>1 total</strong><span>qualifying self-employment + your property-income share</span></div>
       </div>
@@ -348,26 +358,33 @@
         </div>
       </div>
       <div class="guide-grid">
-        <a class="guide-card featured" href="guides/mtd-30k-threshold.html">
+        <a class="guide-card featured" href="/guides/mtd-30k-threshold">
           <span class="guide-number">01</span>
           <span class="guide-tag">Threshold</span>
           <h3>The £30,000 MTD rule without the accounting fog</h3>
           <p>Gross or profit? One marketplace or all of them? Exactly £30,000 or more?</p>
           <b>Read the guide <span aria-hidden="true">→</span></b>
         </a>
-        <a class="guide-card" href="guides/mtd-spreadsheets.html">
+        <a class="guide-card" href="/guides/mtd-spreadsheets">
           <span class="guide-number">02</span>
           <span class="guide-tag">Workflow</span>
           <h3>Can you keep using Excel or Google Sheets?</h3>
           <p>Where bridging software fits and what must become digital.</p>
           <b>See the routes <span aria-hidden="true">→</span></b>
         </a>
-        <a class="guide-card" href="guides/marketplace-payouts.html">
+        <a class="guide-card" href="/guides/marketplace-payouts">
           <span class="guide-number">03</span>
           <span class="guide-tag">Marketplaces</span>
           <h3>Sales, fees, refunds and the payout in your bank</h3>
           <p>A reconciliation framework that keeps unlike numbers separate.</p>
           <b>Open the worksheet <span aria-hidden="true">→</span></b>
+        </a>
+        <a class="guide-card" href="/guides/mtd-first-quarterly-update-deadline">
+          <span class="guide-number">04</span>
+          <span class="guide-tag">Deadline</span>
+          <h3>First MTD quarterly update: due 7 August 2026</h3>
+          <p>What to send, which period it covers and the truth about first-year penalties.</p>
+          <b>Use the checklist <span aria-hidden="true">→</span></b>
         </a>
       </div>
     </section>
@@ -378,7 +395,7 @@
           <p class="eyebrow light"><span></span> Source-led, not vibes-led</p>
           <h2>Every rule should survive a click back to HMRC.</h2>
           <p>Tax rules and software status change. We date-stamp the check, show the exact assumptions, and send you to the official service for the final answer.</p>
-          <a class="button button-light" href="methodology.html">Read the methodology</a>
+          <a class="button button-light" href="/methodology">Read the methodology</a>
         </div>
         <div class="evidence-list">
           <a href="https://www.gov.uk/guidance/find-out-if-and-when-you-need-to-use-making-tax-digital-for-income-tax" target="_blank" rel="noopener">
@@ -411,7 +428,7 @@
   <footer class="site-footer">
     <div class="shell footer-grid">
       <div>
-        <a class="brand footer-brand" href="index.html">
+        <a class="brand footer-brand" href="/">
           <span class="brand-mark" aria-hidden="true">Q</span>
           <span><strong>QuarterReady</strong><small>MTD, minus the fog</small></span>
         </a>
@@ -421,12 +438,13 @@
         <strong>Tools &amp; guides</strong>
         <a href="#checker">Threshold checker</a>
         <a href="#route">Spreadsheet route</a>
-        <a href="guides/mtd-30k-threshold.html">The £30k rule</a>
+        <a href="/guides/mtd-30k-threshold">The £30k rule</a>
       </div>
       <div>
         <strong>Trust</strong>
-        <a href="methodology.html">Methodology &amp; sources</a>
-        <a href="privacy.html">Privacy</a>
+        <a href="/about">About QuarterReady</a>
+        <a href="/methodology">Methodology &amp; sources</a>
+        <a href="/privacy">Privacy</a>
         <a href="mailto:quarterready.contact@gmail.com">Contact</a>
         <a href="#commercial-disclosure">Commercial disclosure</a>
       </div>
