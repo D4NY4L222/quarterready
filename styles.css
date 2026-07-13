@@ -532,6 +532,8 @@ legend { width: 100%; margin: 0 0 7px; font-size: 1rem; font-weight: 900; line-h
 .example-card > strong { display: block; margin-bottom: 10px; color: var(--forest); }
 .math-line { display: flex; justify-content: space-between; gap: 20px; padding: 8px 0; border-bottom: 1px solid #ded8cc; font-size: 0.8rem; }
 .math-line:last-child { border: 0; font-weight: 900; }
+.record-map .math-line { align-items: flex-start; }
+.record-map .math-line strong { max-width: 390px; text-align: right; }
 .source-box { padding: 22px; margin-top: 60px; background: var(--forest-dark); border-radius: 14px; color: var(--white); }
 .source-box h2 { margin-top: 0; font-size: 1.5rem; }
 .source-box p, .source-box li { color: #c4d1c7; font-size: 0.75rem; }
@@ -600,6 +602,8 @@ legend { width: 100%; margin: 0 0 7px; font-size: 1rem; font-weight: 900; line-h
   .article-hero h1 { font-size: 3.1rem; }
   .article-layout { padding-block: 45px 80px; }
   .article-body h2 { font-size: 1.9rem; }
+  .record-map .math-line { flex-direction: column; gap: 4px; }
+  .record-map .math-line strong { max-width: none; text-align: left; }
   .worksheet-row { grid-template-columns: 1fr; }
 }
 

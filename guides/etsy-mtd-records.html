@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A UK Etsy seller's guide to the Orders, Etsy Payments Sales, Deposits and monthly-statement files used to prepare and reconcile MTD records.">
+  <meta name="theme-color" content="#17231b">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:site_name" content="QuarterReady">
+  <meta property="og:title" content="Etsy seller MTD records: which files to use — QuarterReady">
+  <meta property="og:description" content="Where Etsy's sales, statement and deposit downloads fit—and why none is a one-click MTD turnover figure for a UK seller.">
+  <meta property="og:url" content="https://quarterready.pages.dev/guides/etsy-mtd-records">
+  <meta property="og:image" content="https://quarterready.pages.dev/og-quarterready.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="QuarterReady — know your Making Tax Digital start date">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://quarterready.pages.dev/og-quarterready.png">
+  <title>Etsy seller MTD records: which files to use — QuarterReady</title>
+  <link rel="canonical" href="https://quarterready.pages.dev/guides/etsy-mtd-records">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#article">Skip to the guide</a>
+  <div class="disclosure-bar"><div class="shell disclosure-inner"><span><strong>Independent:</strong> QuarterReady is not HMRC, Etsy or a tax adviser.</span><a href="/#commercial-disclosure">How this site is funded</a></div></div>
+  <header class="site-header article-header shell">
+    <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">Q</span><span><strong>QuarterReady</strong><small>MTD, minus the fog</small></span></a>
+    <nav aria-label="Main navigation"><a href="/#checker">Start-date check</a><a href="/#route">Spreadsheet route</a><a href="/methodology">Evidence</a><a class="nav-cta" href="/guides/marketplace-payouts">Check a payout</a></nav>
+  </header>
+
+  <main id="article">
+    <header class="article-hero shell">
+      <p class="eyebrow"><span></span> Etsy records</p>
+      <h1>Etsy seller MTD records: which files do you actually use?</h1>
+      <p class="standfirst">Etsy offers order, sales, deposit and monthly-statement downloads. They do different jobs. This source-led workflow shows a UK seller where each file fits, how to reconcile the payout and why the tax-year total still needs checking.</p>
+      <div class="article-meta"><span>Checked 13 July 2026</span><span>10 minute read</span><span>Sources: Etsy Help and HMRC</span></div>
+    </header>
+
+    <div class="article-layout shell">
+      <aside class="article-toc" aria-label="On this page">
+        <strong>On this page</strong>
+        <a href="#short-answer">The short answer</a>
+        <a href="#downloads">What you can download</a>
+        <a href="#jobs">Which file does what</a>
+        <a href="#tax-year">Build the UK tax year</a>
+        <a href="#workflow">Monthly MTD workflow</a>
+        <a href="#traps">Etsy-specific traps</a>
+        <a href="#checklist">Download checklist</a>
+      </aside>
+
+      <article class="article-body">
+        <h2 id="short-answer">The short answer</h2>
+        <p>Use Etsy's order and payment-sales data to support customer sales, record Etsy fees and applicable refunds separately, then use monthly statements and the Deposits CSV to reconcile the net amount reaching the bank. Do not substitute the payout, Shop Stats revenue or Etsy's calendar-year platform-reporting figure for UK tax-year turnover.</p>
+        <p>HMRC says MTD digital records need an amount, date and category. It also warns that some bank-feed transactions do not show the full income and may need separate digital records. Etsy's files supply evidence and inputs; your accounting basis, period, categories and checks determine the records.</p>
+
+        <div class="callout warning">
+          <strong>There is no single “MTD CSV” in Etsy.</strong>
+          <p>A file can be digital and still contain the wrong period, a net amount, a refund that needs separate treatment or a currency conversion. Preserve the source files, then build a traceable bridge between them.</p>
+        </div>
+
+        <h2 id="downloads">What Etsy lets a seller download</h2>
+        <h3>Order and Etsy Payments files</h3>
+        <p>Etsy's current help path is <strong>Shop Manager → Settings → Options → Download Data → Orders</strong>. Choose the CSV type, month and year; leaving the month blank produces a whole-year file. The documented options include:</p>
+        <ul>
+          <li>Order Items;</li>
+          <li>Orders;</li>
+          <li>Etsy Payments Sales;</li>
+          <li>Etsy Payments Deposits.</li>
+        </ul>
+        <p>Etsy does not publish a complete, permanent schema for every export. Treat current column names as inputs to inspect, not a contract QuarterReady can safely hard-code forever.</p>
+
+        <h3>Monthly statement CSV</h3>
+        <p>The current path is <strong>Shop Manager → Finances → Monthly statements → View all monthly statements</strong>. Select a year and month, choose <strong>Generate CSV</strong>, then follow the download link Etsy emails. Etsy describes this file as payment-account activity for the month, with fields including Type, Net, Fees &amp; Taxes and Info.</p>
+
+        <h3>Annual platform-reporting copy</h3>
+        <p>Etsy says it provides the UK platform-reporting copy by 31 January where reporting applies. That document is a calendar-year compliance report, not a UK tax return. Its reported amount is after specified refunds, Etsy fees and Etsy-remitted taxes, while deductions are also reported separately. Keep it as a cross-check; do not add it to the sales already in your books.</p>
+
+        <h2 id="jobs">Which file does what</h2>
+        <div class="example-card record-map">
+          <strong>A practical Etsy file map</strong>
+          <div class="math-line"><span>Orders / Order Items</span><strong>Order-level sales context, status, discounts, shipping and tax fields</strong></div>
+          <div class="math-line"><span>Etsy Payments Sales</span><strong>Payment-side sales detail, including a documented Gross field</strong></div>
+          <div class="math-line"><span>Monthly statement</span><strong>Fees, refunds, credits, availability and payment-account activity</strong></div>
+          <div class="math-line"><span>Etsy Payments Deposits</span><strong>Bank-settlement date, amount, currency and status</strong></div>
+          <div class="math-line"><span>Platform-reporting copy</span><strong>Calendar-year regulatory cross-check</strong></div>
+        </div>
+
+        <h3>Orders is not a safe one-column total</h3>
+        <p>Etsy documents order-value, discount, shipping, sales-tax, total and status information in its order data. It also says the Order Total does not subtract fully refunded or cancelled orders. That is enough reason not to sum one visible total without checking status, refunds and what each field includes.</p>
+
+        <h3>Etsy Payments Sales is the sales-side cross-check</h3>
+        <p>In a US reporting help article, Etsy documents a Gross column in this file; its currency guidance also says applied conversion rates appear in the sales CSV. Those facts describe the export, not UK tax treatment. Refunds, taxes, accounting basis, timing and field definitions still matter, so use the file alongside order and statement data rather than in isolation.</p>
+
+        <h3>The monthly statement explains movement</h3>
+        <p>The monthly statement is where sales, fees, refunds, credits and other payment-account entries can be followed. Etsy's Info field may also indicate that sale funds are not yet available. This is valuable when a sale exists but the money has not reached the next deposit.</p>
+
+        <h3>Deposits explains the bank, not turnover</h3>
+        <p>Etsy documents the Deposits CSV as containing a date, amount, currency, status and masked bank-account ending digits. The amount represents funds available after the deductions and holds that affect settlement. Use it to match the bank deposit; do not use it as customer sales.</p>
+
+        <h2 id="tax-year">Build the UK tax year deliberately</h2>
+        <p>Etsy's download selector is organised by calendar month and year, while a standard UK tax year runs from 6 April to 5 April. A 2026/27 tax-year record therefore needs part of the 2026 exports and part of the 2027 exports, with the boundary transactions filtered correctly.</p>
+        <p>Timing also depends on the accounting basis: current Self Assessment notes distinguish income received under cash basis from income earned under traditional accounting. Do not assume that the order date or payout date always controls. Confirm the basis and treatment that apply to you.</p>
+        <p>Etsy says Payment-account screen dates use the seller's local time, while longer Shop Stats periods use UTC. Etsy does not publicly specify a universal timezone for every downloaded CSV. Check orders around midnight and the 5/6 April boundary rather than assuming every screen and export uses UK local time.</p>
+
+        <h2 id="workflow">A repeatable monthly MTD workflow</h2>
+        <ol>
+          <li><strong>Download the source files.</strong> Save Orders or Order Items, Etsy Payments Sales, Etsy Payments Deposits and the month's payment-account statement in a read-only source folder.</li>
+          <li><strong>Confirm period and currency.</strong> Record the export date, month, shop currency, payment-account currency and any conversion-rate fields used.</li>
+          <li><strong>Build the sales records.</strong> Use the order and payment-sales evidence to record gross customer receipts before Etsy fees and other business expenses, applying the accounting method appropriate to the business.</li>
+          <li><strong>Record movements separately.</strong> Use statements and supporting documents for applicable refunds, Etsy fees, credits, taxes and other adjustments. Do not deduct the same fee twice.</li>
+          <li><strong>Reconcile the deposits.</strong> Match the Deposits CSV to the bank and explain timing, reserves, availability holds and currency differences.</li>
+          <li><strong>Preserve the bridge.</strong> Keep formulas or imported transformations linking the untouched source data to the record totals and settlement check.</li>
+          <li><strong>Review before submission.</strong> Check duplicate imports, missing months, boundary dates and category totals before compatible software creates the quarterly update.</li>
+        </ol>
+
+        <p>HMRC lists CSV importing/exporting and file downloading/uploading as digital-link methods when moving digital records between relevant software; downloading an Etsy file alone does not create compliant MTD records. Once a digital record has entered the MTD chain and has been included in a quarterly update, HMRC says it must not be manually moved by copy-and-paste. Use the <a href="/guides/mtd-spreadsheets">spreadsheet and bridging-software guide</a> to design that route.</p>
+
+        <h2 id="traps">Etsy-specific traps to check</h2>
+        <ul>
+          <li><strong>Refund is not always cancellation.</strong> Etsy treats these as distinct actions, and fee credits can differ.</li>
+          <li><strong>Available does not mean sold today.</strong> Reserves or delayed availability can move cash into a later deposit.</li>
+          <li><strong>Stats is not a ledger.</strong> Etsy defines Shop Stats revenue differently from an all-fields order export and uses UTC for longer Stats periods.</li>
+          <li><strong>Currency conversion changes the settlement.</strong> When listing and payment-account currencies differ, Etsy documents a conversion fee and applied rates in sales data.</li>
+          <li><strong>VAT documents may use USD.</strong> Etsy says UK seller-fee VAT invoices are PDF summaries in US dollars. Do not mix those amounts straight into a GBP reconciliation.</li>
+          <li><strong>The annual reporting PDF uses a calendar year.</strong> It cannot replace the 6 April to 5 April record set.</li>
+        </ul>
+
+        <div class="callout">
+          <strong>Retail sellers may have a daily-gross-takings option, but do not assume it automatically applies.</strong>
+          <p>HMRC's current direction permits a qualifying retailer to elect to record daily gross takings, including full-value sales through an online platform, with qualifying refunds and voids excluded. Whether your Etsy activity and record method fit that easement is a separate question.</p>
+        </div>
+
+        <h2 id="checklist">The minimum download checklist</h2>
+        <ol>
+          <li>Orders or Order Items for sales context;</li>
+          <li>Etsy Payments Sales for payment-side sales detail;</li>
+          <li>the monthly statement for payment-account movements;</li>
+          <li>Etsy Payments Deposits for the bank match;</li>
+          <li>refund, VAT and other supporting documents where relevant;</li>
+          <li>the annual platform-reporting copy for the calendar-year cross-check.</li>
+        </ol>
+        <p>Then use the <a href="/guides/marketplace-payouts">QuarterReady payout worksheet</a> to investigate a mismatch, and read <a href="/guides/marketplace-report-vs-mtd-income">platform report vs MTD qualifying income</a> before using the annual reporting figure in a threshold decision.</p>
+
+        <div class="source-box">
+          <h2>Sources and limits</h2>
+          <p>Workflow checked 13 July 2026. Etsy can change menus, file labels, fields, fees and reports. QuarterReady is independent and has no affiliation with Etsy.</p>
+          <ul>
+            <li><a href="https://help.etsy.com/hc/en-gb/articles/360000343328-How-to-Download-a-Spreadsheet-of-Your-Sold-Transactions" target="_blank" rel="noopener">Etsy Help: download sold-transaction spreadsheets</a></li>
+            <li><a href="https://help.etsy.com/hc/en-gb/articles/360016389113-How-to-Calculate-Your-Etsy-Payments-Deposit-Amount" target="_blank" rel="noopener">Etsy Help: statements and deposit calculation</a></li>
+            <li><a href="https://help.etsy.com/hc/en-gb/articles/115015747228-How-to-Manage-Your-Payment-Account" target="_blank" rel="noopener">Etsy Help: payment-account activity</a></li>
+            <li><a href="https://help.etsy.com/hc/en-gb/articles/360016389293-How-Is-the-Total-on-My-1099-K-Calculated" target="_blank" rel="noopener">Etsy Help: documented sales and deposits CSV fields (US reporting context)</a></li>
+            <li><a href="https://help.etsy.com/hc/en-gb/articles/115015774268-How-to-Use-Etsy-Stats-for-Your-Shop" target="_blank" rel="noopener">Etsy Help: Shop Stats calculations and timezones</a></li>
+            <li><a href="https://help.etsy.com/hc/en-gb/articles/360000344668-Currency-Conversion-Fees" target="_blank" rel="noopener">Etsy Help: currency conversion and sales CSV rates</a></li>
+            <li><a href="https://help.etsy.com/hc/en-gb/articles/360040584433-How-VAT-Is-Collected-on-Seller-Fees" target="_blank" rel="noopener">Etsy Help: VAT invoices for seller fees</a></li>
+            <li><a href="https://help.etsy.com/hc/en-gb/articles/360002089188-How-to-Issue-a-Full-or-Partial-Refund-For-an-Order" target="_blank" rel="noopener">Etsy Help: refunds, cancellations and fee credits</a></li>
+            <li><a href="https://help.etsy.com/hc/en-gb/articles/17795509361431-What-Information-Does-Etsy-Report-for-Sellers-in-the-EU-UK-and-Canada" target="_blank" rel="noopener">Etsy Help: UK seller information reporting</a></li>
+            <li><a href="https://www.gov.uk/guidance/use-making-tax-digital-for-income-tax/create-digital-records" target="_blank" rel="noopener">HMRC: create and digitally link MTD records</a></li>
+            <li><a href="https://www.gov.uk/guidance/work-out-your-qualifying-income-for-making-tax-digital-for-income-tax" target="_blank" rel="noopener">HMRC: MTD qualifying income</a></li>
+            <li><a href="https://www.gov.uk/government/publications/digital-record-keeping-notice-for-making-tax-digital-for-income-tax/making-tax-digital-for-income-tax-digital-record-keeping-notice" target="_blank" rel="noopener">HMRC: digital-record-keeping direction</a></li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer"><div class="shell footer-grid"><div><a class="brand footer-brand" href="/"><span class="brand-mark" aria-hidden="true">Q</span><span><strong>QuarterReady</strong><small>MTD, minus the fog</small></span></a><p>An independent educational tool for UK sole traders. Not affiliated with or endorsed by HMRC or Etsy.</p></div><div><strong>Next</strong><a href="/guides/marketplace-payouts">Payout worksheet</a><a href="/guides/marketplace-report-vs-mtd-income">Report vs MTD income</a><a href="/guides/mtd-spreadsheets">Spreadsheet guide</a></div><div><strong>Trust</strong><a href="/about">About QuarterReady</a><a href="/methodology">Methodology</a><a href="/privacy">Privacy</a><a href="mailto:quarterready.contact@gmail.com">Contact</a></div></div><div class="shell footer-bottom"><span>Reviewed · 13 July 2026</span><span>Verify your position with HMRC or a qualified tax professional.</span></div></footer>
+</body>
+</html>
