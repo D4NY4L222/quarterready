@@ -5,6 +5,10 @@ These images are hosted by QuarterReady only as media for direct affiliate pins.
 Public asset URLs after deployment:
 
 - `https://quarterready.pages.dev/social/affiliate/designbundles-free-invitation-mockup.png`
+- `https://quarterready.pages.dev/social/affiliate/designbundles-editable-canva-order-form.png`
+- `https://quarterready.pages.dev/social/affiliate/designbundles-clipboard-photoshop-mockups.png`
+- `https://quarterready.pages.dev/social/affiliate/designbundles-free-white-tshirt-mockup.png`
+- `https://quarterready.pages.dev/social/affiliate/designbundles-free-mug-smart-object.png`
 - `https://quarterready.pages.dev/social/affiliate/everbee-free-plan.png`
 - `https://quarterready.pages.dev/social/affiliate/everbee-estimates.png`
 
