@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920" role="img" aria-labelledby="title desc">
+  <title id="title">Etsy product research checklist</title>
+  <desc id="desc">QuarterReady static social creative encouraging Etsy sellers to test an idea before making stock.</desc>
+  <rect width="1080" height="1920" fill="#eff8df"/>
+  <circle cx="925" cy="175" r="275" fill="#d5ff9c"/>
+  <circle cx="105" cy="1735" r="300" fill="#dcefd0"/>
+  <g transform="translate(82 86)">
+    <rect width="72" height="72" rx="18" fill="#173f2b"/>
+    <text x="36" y="51" text-anchor="middle" font-family="Georgia,serif" font-size="46" fill="#ffffff">Q</text>
+    <text x="94" y="32" font-family="Arial,sans-serif" font-weight="800" font-size="27" fill="#17231b">QUARTERREADY</text>
+    <text x="94" y="61" font-family="Arial,sans-serif" font-size="20" fill="#526158">TOOLS FOR MARKETPLACE SELLERS</text>
+  </g>
+  <g transform="translate(82 340)">
+    <rect width="360" height="52" rx="26" fill="#173f2b"/>
+    <text x="180" y="35" text-anchor="middle" font-family="Arial,sans-serif" font-weight="800" font-size="22" letter-spacing="1" fill="#d5ff9c">ETSY PRODUCT TEST</text>
+    <text x="0" y="205" font-family="Georgia,serif" font-size="102" fill="#17231b">
+      <tspan x="0" dy="0">Do not make</tspan>
+      <tspan x="0" dy="116">50 units before</tspan>
+      <tspan x="0" dy="116">you answer</tspan>
+      <tspan x="0" dy="116" font-style="italic">five questions.</tspan>
+    </text>
+    <line x1="0" y1="720" x2="916" y2="720" stroke="#173f2b" stroke-width="5"/>
+    <text x="0" y="805" font-family="Arial,sans-serif" font-weight="700" font-size="34" fill="#17231b">
+      <tspan x="0" dy="0">1. Who buys it?</tspan>
+      <tspan x="0" dy="58">2. What exact phrase do they search?</tspan>
+      <tspan x="0" dy="58">3. What already wins their click?</tspan>
+      <tspan x="0" dy="58">4. Can the price cover the work?</tspan>
+      <tspan x="0" dy="58">5. What is the smallest useful test?</tspan>
+    </text>
+  </g>
+  <g transform="translate(82 1560)">
+    <text font-family="Arial,sans-serif" font-size="23" font-weight="800" letter-spacing="1" fill="#526158">FREE 20-MINUTE CHECKLIST &#183; NO SIGN-UP</text>
+    <rect y="72" width="916" height="130" rx="24" fill="#173f2b"/>
+    <text x="458" y="125" text-anchor="middle" font-family="Arial,sans-serif" font-size="27" font-weight="800" fill="#ffffff">quarterready.pages.dev/guides/</text>
+    <text x="458" y="166" text-anchor="middle" font-family="Arial,sans-serif" font-size="27" font-weight="800" fill="#ffffff">etsy-product-research-checklist</text>
+  </g>
+</svg>
