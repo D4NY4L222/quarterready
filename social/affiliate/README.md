@@ -12,6 +12,7 @@ Public asset URLs after deployment:
 - `https://quarterready.pages.dev/social/affiliate/everbee-free-plan.png`
 - `https://quarterready.pages.dev/social/affiliate/everbee-estimates.png`
 - `https://quarterready.pages.dev/social/affiliate/everbee-keyword-metrics.png`
+- `https://quarterready.pages.dev/social/affiliate/everbee-plan-comparison.png`
 
 Publishing gates:
 
