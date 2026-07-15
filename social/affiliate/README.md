@@ -11,9 +11,10 @@ Public asset URLs after deployment:
 - `https://quarterready.pages.dev/social/affiliate/designbundles-free-mug-smart-object.png`
 - `https://quarterready.pages.dev/social/affiliate/everbee-free-plan.png`
 - `https://quarterready.pages.dev/social/affiliate/everbee-estimates.png`
+- `https://quarterready.pages.dev/social/affiliate/everbee-keyword-metrics.png`
 
 Publishing gates:
 
 - Design Bundles: require a unique tracked `?ref=` URL.
-- EverBee: require written approval for the requested direct organic Pinterest promotion.
-- Keep `Ad` prominent and disclose that QuarterReady may earn a commission.
+- EverBee: the user reports receiving written approval for the requested direct organic Pinterest promotion; the approval email was deleted and cannot be retained as evidence.
+- Keep `Ad` prominent and state the commission relationship unambiguously beside the link.
